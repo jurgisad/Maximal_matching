@@ -9,7 +9,8 @@ Pradedame paieška platyn iš nesuporuotss viršūnės, jei randame, kad jo bria
 Teoriškai iš viso galimų iteracijų yra n/2, nes kiekvienojke iteracijoje galima pridėti vieną porą, o maksimalus porų skaičius yra n/2, taigi sudėtingumas O(n). Paprasta paieška platyn yra O(n^2), nes kiekviena viršūnė gali pasirodyti paieškoje tik po kartą, o iš jos atliekama paieška į visas likusias viršūnes. Augemnting kelią galime rasti tik kartą kiekvienoje iteracijoje, radimo laikas užtrunka O(n). Žiedų sutraukimas užtranka O(n|bc|), kur |bc| yra žiedo c ilgis, kadangi kiekvienai viršūnei/žiedui yra priskiriama maksimaliai vienas žiedas, tai bc maksimali suma = n, reiškia žiedų sutraukimas yra O(n^2). Kadangi visumoje yra O(n) iteracijų, tai viso algoritmo sudėtingumas yra O(n^3).
 # Toliau tyrimas su skirtingais m ir n parametrais, kur n – viršūnių, o m – briaunų skaičius. 
 Testai atlikti kievieno dydžio failui sugeneravus 10 skirtingų grafų, atliekant testą su visais jais po 10 kartų ir paimant laiką kaip vidurkį. 
-Pastebėta, kad laikas kinta, keičiant m skaičių. Didinant n, bet paliekant m tokį patį veikimo greitis auga greičiau, nei kai m = n, ar m=n*1.5. Kai grafas yra pilnas, veikimo laikas su šiuo algoritmu yra ilgiausias. Iš keturių paimtų m variantų, greičiausiai algoritmas veikė su m=n*1.5. 
+Pastebėta, kad laikas kinta, keičiant m skaičių. Didinant n, bet paliekant m tokį patį veikimo greitis auga greičiau, nei kai m = n, ar m=n*1.5. Kai grafas yra pilnas, veikimo laikas su šiuo algoritmu yra ilgiausias. Iš keturių paimtų m variantų, greičiausiai algoritmas veikė su m=n*1.5. Matome, jog teorinis sudėtingumas beveik tiksliai atitinka praktinį - padidinus n 2 kartus, algoritmas veikia apie 2^3 kartų ilgiau.  
+Naudoti duomenys pateikti test folderyje.
 
 ![image](https://github.com/jurgisad/Maximal_matching/assets/144427804/32208588-ff47-4652-b616-4e90e6d67de4)
 
